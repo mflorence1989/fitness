@@ -74,14 +74,7 @@ img {
     width: 95%;
     margin: 0 auto;
 }
-hr {
-    border: 1px solid var(--grisClaro);
-}
-.imagen-destacada {
-    margin-bottom: 3rem;
-}
-
-/** Utilidades **/
+/** Utilities **/
 .text-center {
     text-align: center;
 }
@@ -118,7 +111,7 @@ hr {
     } 
 }
 
-.main-menu{
+.main-menu {
     display: none;
 }
 @media (min-width: 768px) {
@@ -127,5 +120,30 @@ hr {
     }
     .main-menu .menu{
         display:flex;
+    }
+}
+
+/**page **/
+.featured-image{
+    margin-bottom: 3rem;
+}
+.page h1{
+    margin-bottom: 4rem;
+}
+.page.no-sidebars{
+    max-width:80rem;
+    margin: 0 auto;
+}
+/**page with sidebars **/
+@media (min-width: 768px) {
+    .page.with-sidebar{
+        display: flex;
+        justify-content:space-between;
+    }
+    .with-sidebar .page-content {
+        flex: 0 0 calc(60% - 2rem);
+    }
+    .with-sidebar .page-content .sidebar{
+        flex: 0 0 calc(40% - 2rem);
     }
 }
