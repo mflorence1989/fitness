@@ -17,7 +17,6 @@ License: GNU General Public License v2 or later
     --primary: #FF5b00;
     --darkGrey: #2F2E2E;
     --lightGrey: #EBEBEB;
-
     --white: #ffff;
     --black: #0000;
 
@@ -30,7 +29,7 @@ body {
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 2; 
-    font-family: var(--)
+    font-family: var(--mainFont)
 }  
 *, *:before, *:after {
     box-sizing: inherit;
@@ -136,6 +135,71 @@ img {
 .main-menu .current_page_item{
     border-bottom: 3px solid var(--primary)
 }
+/* mobile slciknav*/
+@media (min-width: 768px) {
+    .slicknav_menu{
+        display: none;
+    }
+}
+.slicknav_menu{
+    background-color: var(--darkGrey);
+}
+.slicknav_menu a{
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: var(--mainFont);
+}
+.slicknav_menu a:hover{
+    background: transparent;
+    color: var(--primary);
+}
+.slicknav_btn{
+    background-color: var(--primary);
+}
+
+/*footer*/
+.site-footer{
+    padding: 2rem 0;
+    border-top: 2px solid black;
+}
+.footer-content{
+    display:flex;
+    justify-content: space-between;
+}
+.footer-menu .menu{
+    display: none;
+}
+@media (min-width: 768px) {
+    .footer-menu .menu{
+        display: flex;
+    }
+    .footer-menu li{
+        margin-right: 2rem;
+    }
+    .footer-menu li:last-of-type{
+        margin-right: 0;
+    }
+     .footer-menu a{
+        font-family: var(--mainFont);
+        color:var(--primary);
+        font-size:2rem;
+    } 
+}
+ .copyright{
+     text-align:center;
+     flex:1;
+     font-family: var(--mainFont);
+     font-size:2rem;
+     margin:0;
+ }
+@media (min-width: 768px) {
+   .copyright{
+       flex: 0 0 auto;
+   } 
+}
+
+
+
 /**page **/
 .featured-image{
     margin-bottom: 3rem;
@@ -160,3 +224,4 @@ img {
         flex: 0 0 calc(40% - 2rem);
     }
 }
+

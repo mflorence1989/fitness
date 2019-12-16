@@ -2,6 +2,7 @@
 /** Enable W3 Total Cache */
 define('WP_CACHE', true); // Added by W3 Total Cache
 
+/** Enable W3 Total Cache */
 /**
  * The base configuration for WordPress
  *
@@ -20,26 +21,19 @@ define('WP_CACHE', true); // Added by W3 Total Cache
  *
  * @package WordPress
  */
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'gym' );
-
 /** MySQL database username */
 define( 'DB_USER', 'root' );
-
 /** MySQL database password */
 define( 'DB_PASSWORD', 'root' );
-
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
-
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -57,9 +51,7 @@ define( 'AUTH_SALT',        '%{o{au2N&j{DL0G BlRn!XNudv3-dHA[b@>hh|~pm|t*6L~K o 
 define( 'SECURE_AUTH_SALT', '_q0g7SF>9nQd+#!FbQ7cNqOC[AT&N:6)J{O sZy^1;;GVk+<E/l`wVqx&h#V/o]m' );
 define( 'LOGGED_IN_SALT',   '0uG@Iq_u%pQ_~Z,N>=X{Hxz2[4KJIOEi]II1P([n1c*FW}%JT1CQF6h,U)7x^9n_' );
 define( 'NONCE_SALT',       'qt2]H&v93EgQAZRE@FvYT}_`KrV%SZmt=av@KEL;:3t8]-+h+Qhl9PW:1<<z7a}P' );
-
 /**#@-*/
-
 /**
  * WordPress Database Table prefix.
  *
@@ -67,7 +59,6 @@ define( 'NONCE_SALT',       'qt2]H&v93EgQAZRE@FvYT}_`KrV%SZmt=av@KEL;:3t8]-+h+Qh
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-
 /**
  * For developers: WordPress debugging mode.
  *
@@ -81,13 +72,10 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-
 /* That's all, stop editing! Happy publishing. */
-
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
-
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
